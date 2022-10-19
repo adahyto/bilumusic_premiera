@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta name="author" content="161-77" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -28,9 +28,26 @@
     <meta name="twitter:image" content="" />
   </head>
   <body>
-    <div id="loader-wrapper">
-      <div class="loader"></div>
-    </div>
+    <main>
+      <div id="loader-wrapper">
+        <div class="loader"></div>
+      </div>
+      <center>
+        <h1>BILUMUSIC</h1>
+      </center>
+      <div class="video-container">
+        <iframe
+          class="video-container__video"
+          width="1920"
+          height="1080"
+          src="https://www.youtube.com/embed/U20J3h490Z8"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
     <style>
       @keyframes rotation {
         0% {
@@ -41,7 +58,7 @@
         }
       }
       #loader-wrapper {
-        background-color: #ffffff;
+        background-color: #000000;
         position: fixed;
         z-index: 999;
         width: 100%;
@@ -51,7 +68,7 @@
       .loader {
         width: 40px;
         height: 40px;
-        border: 5px solid #000000;
+        border: 5px solid #ffffff;
         border-bottom-color: transparent;
         border-radius: 50%;
         margin-top: calc(50vh - 20px);
@@ -78,7 +95,7 @@
         width: 100%;
       }
 
-      .videoContainer {
+      .video-container {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -98,23 +115,6 @@
         height: 100%;
       }
     </style>
-    <main>
-      <center>
-        <h1>BILUMUSIC</h1>
-      </center>
-      <div class="videoContainer">
-        <iframe
-          class="videoContainer__video"
-          width="1920"
-          height="1080"
-          src="https://www.youtube.com/embed/U20J3h490Z8"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </main>
     <!--[if IE
       ]><div
         class="w-100 text-center bg-dark text-white pt-3 px-4 pb-1 position-fixed"
