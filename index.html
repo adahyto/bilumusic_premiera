@@ -98,12 +98,14 @@
       });
     </script>
     <script>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker
-            .register("/service-worker.js")
-            .then((reg) => {});
-        });
+      // register ServiceWorker, remember to use absolute path!
+      if (navigator.serviceWorker) {
+        navigator.serviceWorker.register(
+          "https://github.com/adahyto/bilumusic_premiera/sw.js",
+          {
+            scope: "https://github.com/adahyto/bilumusic_premiera/",
+          }
+        );
       }
     </script>
   </body>
