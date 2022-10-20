@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-color: #000000;
   }
 
   main {
@@ -25,7 +26,6 @@ body {
   section {
     margin: 0;
     height: 1800px;
-    background-color: #000000;
   }
 
   .text-container {
