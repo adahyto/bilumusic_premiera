@@ -25,7 +25,7 @@
     />
     <link
       rel="manifest"
-      href="https://github.com/adahyto/bilumusic_premiera/manifest.json"
+      href="https://raw.githubusercontent.com/adahyto/bilumusic_premiera/main/manifest.json"
     />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -104,9 +104,10 @@
       // register ServiceWorker, remember to use absolute path!
       if (navigator.serviceWorker) {
         navigator.serviceWorker.register(
-          "https://github.com/adahyto/bilumusic_premiera/sw.js",
+          "https://raw.githubusercontent.com/adahyto/bilumusic_premiera/main/sw.js",
           {
-            scope: "https://github.com/adahyto/bilumusic_premiera/",
+            scope:
+              "https://raw.githubusercontent.com/adahyto/bilumusic_premiera/main/",
           }
         );
       }
