@@ -6,14 +6,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="161-77" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
     <meta property="og:title" content="" />
     <meta property="og:description" content="" />
     <meta property="og:image" content="" />
@@ -25,12 +43,6 @@
   </head>
   <body>
     <main>
-      <div id="loader-wrapper">
-        <div class="loader"></div>
-      </div>
-      <center>
-        <h1>BILUMUSIC</h1>
-      </center>
       <div class="video-container">
         <iframe
           class="video-container__video"
@@ -43,74 +55,28 @@
           allowfullscreen
         ></iframe>
       </div>
+      <center>
+        <div class="text-container">
+          <h1>BILUMUSIC</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            sit amet ex a elit sagittis cursus. In lorem velit, efficitur a
+            egestas vitae, hendrerit sed quam
+          </p>
+          <div class="textcolumns-container">
+            <p>
+              Mauris gravida, neque vel euismod gravida, nisl enim pulvinar
+              ligula, vel pellentesque mauris mauris at dolor.
+            </p>
+            <p>
+              Quisque justo lorem, luctus ac neque eu, accumsan auctor odio.
+              Suspendisse potenti.
+            </p>
+          </div>
+        </div>
+      </center>
     </main>
-    <style>
-      @keyframes rotation {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-      #loader-wrapper {
-        background-color: #000000;
-        position: fixed;
-        z-index: 999;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-      }
-      .loader {
-        width: 40px;
-        height: 40px;
-        border: 5px solid #ffffff;
-        border-bottom-color: transparent;
-        border-radius: 50%;
-        margin-top: calc(50vh - 20px);
-        display: inline-block;
-        box-sizing: border-box;
-        -webkit-animation: rotation 1s linear infinite;
-        animation: rotation 1s linear infinite;
-      }
-
-      main {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-
-      center {
-        font-family: "Fjalla One", sans-serif;
-        z-index: 10;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 100%;
-      }
-
-      .video-container {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      iframe {
-        /* optional */
-        width: 100%;
-        height: 100%;
-      }
-    </style>
+    <section></section>
     <!--[if IE
       ]><div
         class="w-100 text-center bg-dark text-white pt-3 px-4 pb-1 position-fixed"
@@ -122,7 +88,6 @@
         </p>
       </div><!
     [endif]-->
-    <script></script>
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       crossorigin="anonymous"
