@@ -3,8 +3,7 @@ var VERSION = "version_01"; // Version of the off-line cache (change this value 
 var CACHE_NAME = APP_PREFIX + VERSION;
 var URLS = [
   // Add URL you want to cache in this list.
-  "https://raw.githubusercontent.com/adahyto/bilumusic_premiera/main/", // If you have separate JS/CSS files,
-  "https://raw.githubusercontent.com/adahyto/bilumusic_premiera/main/index.html", // add path to those files here
+  "https://github.com/adahyto/bilumusic_premiera/", // If you have separate JS/CSS files,
 ];
 
 // Respond with cached resources
